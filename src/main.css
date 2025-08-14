@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom styles */
+
+body {
+  background-color: cornflowerblue;
+}
+
+/* Make sure nav bar links are orange */
+nav a {
+  color: #E67E22;
+}
+
+/* Optional: If you want to override tailwind bg-nav-bg */
+nav {
+  background-color: #444444;
+}
+
+
+/* Big background text styling */
+.background-header {
+  font-family: 'Anton', sans-serif;
+  font-size: 12rem;            
+  color: #E67E22;
+  opacity: 0.6;                
+  user-select: none;
+  pointer-events: none;
+  margin: 0;
+  line-height: 1;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+
+/* Foreground smaller text */
+.foreground-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin: 0;
+  padding-top: 1rem;  
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px #ffffff;
+}
+
+
+.nav-link {
+  color: #f97316 !important; /* Tailwind orange-500 */
+}
+
+.nav-link:hover {
+  color: #ea580c !important; /* Tailwind orange-600 */
+}

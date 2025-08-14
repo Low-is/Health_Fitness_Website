@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Davon Lee Training</title>
+
+  <!-- Link your locally built Tailwind CSS file -->
+  <link rel="stylesheet" href="dist/output.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Russo+One&family=Anton&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+<link 
+  href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+  rel="stylesheet" 
+/>
+</head>
+<body class="bg-bg-blue font-montserrat text-gray-900">
+
+<!-- Navigation -->
+    <!-- Navigation Bar -->
+<nav class="w-full bg-nav-bg py-4 font-semibold text-lg select-none text-orange">
+  <div class="max-w-7xl mx-auto px-6 flex justify-center items-center gap-10">
+    <div class="flex gap-10 relative z-50">
+
+      <!-- Home -->
+      <a href="#home" class="text-orange hover:text-orange-hover transition transform hover:scale-110 flex items-center gap-2">
+        <i class="fas fa-home"></i> Home
+      </a>
+
+      <!-- About -->
+      <a href="#about" class="text-orange hover:text-orange-hover transition transform hover:scale-110 flex items-center gap-2">
+        <i class="fas fa-user"></i> About
+      </a>
+
+      <!-- Program Dropdown -->
+<div class="relative group">
+  <a href="#program" class="nav-link flex items-center gap-2 transform transition hover:scale-110 cursor-pointer">
+    <i class="fas fa-dumbbell"></i> Program
+  </a>
+  <div
+    class="absolute left-0 mt-2 w-48 bg-white text-orange shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+    onmouseenter="this.classList.add('opacity-100','visible')"
+    onmouseleave="this.classList.remove('opacity-100','visible')"
+  >
+    <a href="#plans" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Plans</a>
+    <a href="#health" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Health</a>
+  </div>
+</div>
+
+      <!-- Health Resources Dropdown -->
+  <div class="relative group">
+    <a href="#health-resources" class="nav-link flex items-center gap-2 transform transition hover:scale-110 cursor-pointer">
+      <i class="fas fa-heartbeat"></i> Health Resources
+    </a>
+    <div
+      class="absolute left-0 mt-2 w-56 bg-white text-orange shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-700 z-50"
+      onmouseenter="this.classList.add('opacity-100','visible')"
+      onmouseleave="this.classList.remove('opacity-100','visible')"
+    >
+      <a href="#recipe-for-success" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Recipe for Success</a>
+      <a href="#nutrition" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Nutrition</a>
+      <a href="#meal-planner" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Meal Planner</a>
+      <a href="#sleep-tips" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Sleep Tips</a>
+      <a href="#bmi-calculator" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">BMI Calculator</a>
+    </div>
+  </div>
+
+      <!-- Track Progress Dropdown -->
+  <div class="relative group">
+    <a href="#track-progress" class="nav-link flex items-center gap-2 transform transition hover:scale-110 cursor-pointer">
+      <i class="fas fa-chart-line"></i> Track Progress
+    </a>
+    <div
+      class="absolute left-0 mt-2 w-48 bg-white text-orange shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-700 z-50"
+      onmouseenter="this.classList.add('opacity-100','visible')"
+      onmouseleave="this.classList.remove('opacity-100','visible')"
+    >
+      <a href="#progress-tracker" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Progress Tracker</a>
+      <a href="#weekly-schedule" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Weekly Schedule</a>
+    </div>
+  </div>
+
+      <!-- Contact Dropdown -->
+  <div class="relative group">
+    <a href="#contact" class="nav-link flex items-center gap-2 transform transition hover:scale-110 cursor-pointer">
+      <i class="fas fa-envelope"></i> Contact
+    </a>
+    <div
+      class="absolute left-0 mt-2 w-56 bg-white text-orange shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-700 z-50"
+      onmouseenter="this.classList.add('opacity-100','visible')"
+      onmouseleave="this.classList.remove('opacity-100','visible')"
+    >
+      <a href="#contact-info" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Contact Info</a>
+      <a href="#book-appointment" class="block px-4 py-2 hover:bg-orange-hover hover:text-white transition">Book an Appointment</a>
+    </div>
+  </div>
+
+</nav>
+
+
+
+<!-- Animated page content -->
+ <div class="animate-fadeUp">
+  <div class="max-w-7xl mx-auto p-6 pt-32">
+    <!-- Header -->
+    <div class="text-center mt-10 mb-12">
+      <h1 class="background-header">Davon Lee Training</h1>
+      <h2 class="foreground-header">Health and Wellness Program</h2>
+    </div>
+
+    <!-- Three Equal Boxes Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+      <!-- Box 1 -->
+      <div
+        class="cursor-pointer bg-white rounded-lg p-6 shadow hover:shadow-xl transition transform hover:scale-[1.03]"
+        onclick="toggleTestimonial()"
+      >
+        <img
+          src="C:/Users/loisr/OneDrive/Documents/Davon_website/Riley .jpg"
+          alt="Picture of Riley"
+          class="rounded-lg w-full object-cover max-h-[300px]"
+        />
+        <h2 class="text-2xl font-bold mt-4">Riley's Transformation</h2>
+        <p class="text-orange font-semibold mt-2 flex items-center gap-2">
+          <i class="fas fa-comment-dots"></i> Read Testimonial
+        </p>
+        <div
+          id="testimonial-box"
+          class="hidden mt-4 bg-gray-100 p-4 rounded border border-gray-300 text-sm"
+        >
+          <p class="italic">
+            "Working with Davon changed my life. I feel stronger, more confident, and finally
+            understand how to take care of my health long-term. His coaching goes beyond just
+            workouts – it’s a mindset shift."
+          </p>
+          <p class="mt-2 text-right font-semibold">– Riley</p>
+        </div>
+      </div>
+
+       <!-- Box 2 -->
+  <div
+    class="cursor-pointer bg-white rounded-lg p-6 shadow hover:shadow-xl transition transform hover:scale-[1.03]"
+    onclick="toggleTestimonial(2)"
+  >
+    <!-- Placeholder image -->
+    <div
+      class="flex items-center justify-center bg-gray-200 rounded-lg w-full h-[300px] text-gray-500 text-xl font-semibold select-none"
+    >
+      Pic 2 goes here
+    </div>
+    <h2 class="text-2xl font-bold mt-4">Client Success Story</h2>
+    <p class="text-orange font-semibold mt-2 flex items-center gap-2">
+      <i class="fas fa-comment-dots"></i> Read Testimonial
+    </p>
+    <div
+      id="testimonial-box-2"
+      class="hidden mt-4 bg-gray-100 p-4 rounded border border-gray-300 text-sm"
+    >
+      <p class="italic">
+        "Davon's coaching helped me regain my energy and confidence. His approach is
+        motivating and truly personalized."
+      </p>
+      <p class="mt-2 text-right font-semibold">– Client 2</p>
+    </div>
+  </div>
+
+  <!-- Box 3 -->
+  <div
+    class="cursor-pointer bg-white rounded-lg p-6 shadow hover:shadow-xl transition transform hover:scale-[1.03]"
+    onclick="toggleTestimonial(3)"
+  >
+    <!-- Placeholder image -->
+    <div
+      class="flex items-center justify-center bg-gray-200 rounded-lg w-full h-[300px] text-gray-500 text-xl font-semibold select-none"
+    >
+      Pic 3 goes here
+    </div>
+    <h2 class="text-2xl font-bold mt-4">Transformation Journey</h2>
+    <p class="text-orange font-semibold mt-2 flex items-center gap-2">
+      <i class="fas fa-comment-dots"></i> Read Testimonial
+    </p>
+    <div
+      id="testimonial-box-3"
+      class="hidden mt-4 bg-gray-100 p-4 rounded border border-gray-300 text-sm"
+    >
+      <p class="italic">
+        "I never thought fitness could be this enjoyable and rewarding. Davon’s
+        training methods changed everything for me."
+      </p>
+      <p class="mt-2 text-right font-semibold">– Client 3</p>
+    </div>
+  </div>
+ </div>
+
+
+   <!-- About Me Section -->
+<section id="about" class="bg-white pt-36 pb-20 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Placeholder for image -->
+    <div class="flex justify-center">
+      <div class="w-64 h-64 bg-gray-200 rounded-full shadow-md flex items-center justify-center text-gray-500 text-xl font-semibold select-none">
+        Picture of Davon
+      </div>
+    </div>
+
+    <!-- Text content -->
+    <div class="space-y-6">
+      <h2 class="text-4xl font-bold text-orange">Meet Davon Randolph</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        <strong>Bio:</strong> Hi, I’m Davon Randolph — a master trainer with over 10 years of experience helping people become the strongest, healthiest version of themselves.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700">
+        My fitness journey began in 2016 with a deep passion for working out. Over the years, I’ve learned that physical strength is just the beginning — true transformation comes from consistency, mindset, and education.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700">
+        With a proven track record of success and hundreds of clients trained, I’ve developed an approach that prioritizes sustainable health, confidence, and empowerment.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <script>
+    function toggleOverlay(id) {
+      document.querySelectorAll('.fixed.inset-0').forEach((el) => el.classList.add('hidden'));
+      const overlay = document.getElementById(`overlay-${id}`);
+      if (overlay && overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+      }
+    }
+
+    function closeOverlay(id) {
+      const overlay = document.getElementById(`overlay-${id}`);
+      if (overlay) {
+        overlay.classList.add('hidden');
+      }
+    }
+
+    function toggleTestimonial() {
+      const box = document.getElementById('testimonial-box');
+      box.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
